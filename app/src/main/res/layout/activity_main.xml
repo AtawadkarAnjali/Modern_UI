@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/topView1"
+        android:layout_width="21dp"
+        android:layout_height="139dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:background="@color/white" />
+
+    <View
+        android:id="@+id/topView2"
+        android:layout_width="18dp"
+        android:layout_height="110dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="57dp"
+        android:background="#01579B"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:visibility="invisible"
+            android:layout_width="300dp"
+            android:layout_height="350dp"
+            android:adjustViewBounds="true"
+            android:id="@+id/logo"
+            android:src="@drawable/aa"/>
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ANJALI ATAWADKAR"
+            android:layout_marginTop="20dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#FF6F00"/>
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/slogan"
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Believe yourself "
+            android:textSize="25sp"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/topView3"
+        android:layout_width="18dp"
+        android:layout_height="89dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="97dp"
+        android:background="#B71C40"
+        android:visibility="invisible" />
+
+    <View
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottomView1"
+        android:layout_width="18dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="20dp"
+        android:background="@color/white"/>
+
+    <View
+        android:visibility="invisible"
+        android:id="@+id/bottomView2"
+        android:layout_toEndOf="@+id/bottomView1"
+        android:layout_width="18dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:background="#01579B"/>
+
+    <View
+        android:visibility="invisible"
+        android:layout_toEndOf="@id/bottomView2"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottomView3"
+        android:layout_width="18dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:background="#B71C40" />
+
+
+
+</RelativeLayout>
